@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:timer_app/modules/Timer/manager/bloc.dart';
+import 'package:wave/config.dart';
+import 'package:wave/wave.dart';
 
 class TimerScreen extends StatelessWidget {
   const TimerScreen({super.key});
@@ -35,9 +37,9 @@ class TimerScreen extends StatelessWidget {
                 ],
               ],
               durations: [19440,10000,6000],
-              highPrecentages : [0.03,0.01,0.02] ,
               gradientBegin : Alignment.bottomCenter,
               gradientEnd : Alignment.topCenter,
+              heightPercentages:  [0.03,0.01,0.02] ,
             ),
             size: const Size(double.infinity, double.infinity),
             backgroundColor : Colors.blue[50]
